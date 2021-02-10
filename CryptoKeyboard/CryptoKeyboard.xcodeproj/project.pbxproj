@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		889C543425CABA4700228292 /* CryptoKeyboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889C540B25CABA4600228292 /* CryptoKeyboardApp.swift */; };
+		889C543825CABA4700228292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 889C540D25CABA4700228292 /* Assets.xcassets */; };
+		B094AE4B25CB9CEE00DCA01E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B094AE4A25CB9CEE00DCA01E /* Settings.bundle */; };
+		B094AE5925CB9D9900DCA01E /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094AE5825CB9D9900DCA01E /* KeyboardViewController.swift */; };
+		B094AE5D25CB9D9900DCA01E /* Crypto Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B094AE5625CB9D9900DCA01E /* Crypto Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B094AE6825CBA5D200DCA01E /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094AE6725CBA5D200DCA01E /* KeyboardView.swift */; };
+		B094AE6E25CBC24B00DCA01E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 889C540D25CABA4700228292 /* Assets.xcassets */; };
+		B095540125D288820009A404 /* CKModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095540025D288820009A404 /* CKModel.swift */; };
+		B095540525D289270009A404 /* CKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095540425D289270009A404 /* CKColor.swift */; };
+		B0B41AA325CAEAD20012A87D /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B41AA225CAEAD20012A87D /* Home.swift */; };
+		B0BF548D25CF082B0073F40A /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF548B25CF082B0073F40A /* KeychainItemAccessibility.swift */; };
+		B0BF548E25CF082B0073F40A /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF548C25CF082B0073F40A /* KeychainWrapper.swift */; };
+		B0BF549225CF2B6F0073F40A /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0BF549125CF2B6F0073F40A /* Media.xcassets */; };
+		B0EA6B4F25D31A860090F2A3 /* CKViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EA6B4E25D31A860090F2A3 /* CKViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B094AE5B25CB9D9900DCA01E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 889C540625CABA4600228292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B094AE5525CB9D9900DCA01E;
+			remoteInfo = "Crypto Keyboard";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B094AE6125CB9D9900DCA01E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B094AE5D25CB9D9900DCA01E /* Crypto Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		889C540B25CABA4600228292 /* CryptoKeyboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoKeyboardApp.swift; sourceTree = "<group>"; };
+		889C540D25CABA4700228292 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		889C541225CABA4700228292 /* CryptoKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		889C541525CABA4700228292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B094AE4A25CB9CEE00DCA01E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		B094AE5625CB9D9900DCA01E /* Crypto Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Crypto Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B094AE5825CB9D9900DCA01E /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		B094AE5A25CB9D9900DCA01E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B094AE6725CBA5D200DCA01E /* KeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		B095540025D288820009A404 /* CKModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKModel.swift; sourceTree = "<group>"; };
+		B095540425D289270009A404 /* CKColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKColor.swift; sourceTree = "<group>"; };
+		B0B41AA225CAEAD20012A87D /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		B0BF548B25CF082B0073F40A /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		B0BF548C25CF082B0073F40A /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		B0BF549125CF2B6F0073F40A /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		B0EA6B4E25D31A860090F2A3 /* CKViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		889C540F25CABA4700228292 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B094AE5325CB9D9900DCA01E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		889C540525CABA4600228292 = {
+			isa = PBXGroup;
+			children = (
+				889C540A25CABA4600228292 /* Shared */,
+				889C541425CABA4700228292 /* iOS */,
+				B094AE5725CB9D9900DCA01E /* Crypto Keyboard */,
+				889C541325CABA4700228292 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		889C540A25CABA4600228292 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				889C540B25CABA4600228292 /* CryptoKeyboardApp.swift */,
+				B0B41AA225CAEAD20012A87D /* Home.swift */,
+				889C540D25CABA4700228292 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		889C541325CABA4700228292 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				889C541225CABA4700228292 /* CryptoKeyboard.app */,
+				B094AE5625CB9D9900DCA01E /* Crypto Keyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		889C541425CABA4700228292 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				889C541525CABA4700228292 /* Info.plist */,
+				B094AE4A25CB9CEE00DCA01E /* Settings.bundle */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		B094AE5725CB9D9900DCA01E /* Crypto Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B0BF548B25CF082B0073F40A /* KeychainItemAccessibility.swift */,
+				B0BF548C25CF082B0073F40A /* KeychainWrapper.swift */,
+				B094AE5825CB9D9900DCA01E /* KeyboardViewController.swift */,
+				B094AE6725CBA5D200DCA01E /* KeyboardView.swift */,
+				B0EA6B4E25D31A860090F2A3 /* CKViewModel.swift */,
+				B095540025D288820009A404 /* CKModel.swift */,
+				B095540425D289270009A404 /* CKColor.swift */,
+				B094AE5A25CB9D9900DCA01E /* Info.plist */,
+				B0BF549125CF2B6F0073F40A /* Media.xcassets */,
+			);
+			path = "Crypto Keyboard";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		889C541125CABA4700228292 /* CryptoKeyboard (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 889C543C25CABA4700228292 /* Build configuration list for PBXNativeTarget "CryptoKeyboard (iOS)" */;
+			buildPhases = (
+				889C540E25CABA4700228292 /* Sources */,
+				889C540F25CABA4700228292 /* Frameworks */,
+				889C541025CABA4700228292 /* Resources */,
+				B094AE6125CB9D9900DCA01E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B094AE5C25CB9D9900DCA01E /* PBXTargetDependency */,
+			);
+			name = "CryptoKeyboard (iOS)";
+			productName = "CryptoKeyboard (iOS)";
+			productReference = 889C541225CABA4700228292 /* CryptoKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B094AE5525CB9D9900DCA01E /* Crypto Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B094AE5E25CB9D9900DCA01E /* Build configuration list for PBXNativeTarget "Crypto Keyboard" */;
+			buildPhases = (
+				B094AE5225CB9D9900DCA01E /* Sources */,
+				B094AE5325CB9D9900DCA01E /* Frameworks */,
+				B094AE5425CB9D9900DCA01E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Crypto Keyboard";
+			productName = "Crypto Keyboard";
+			productReference = B094AE5625CB9D9900DCA01E /* Crypto Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		889C540625CABA4600228292 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					889C541125CABA4700228292 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					B094AE5525CB9D9900DCA01E = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 889C540925CABA4600228292 /* Build configuration list for PBXProject "CryptoKeyboard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 889C540525CABA4600228292;
+			productRefGroup = 889C541325CABA4700228292 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				889C541125CABA4700228292 /* CryptoKeyboard (iOS) */,
+				B094AE5525CB9D9900DCA01E /* Crypto Keyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		889C541025CABA4700228292 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B094AE4B25CB9CEE00DCA01E /* Settings.bundle in Resources */,
+				889C543825CABA4700228292 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B094AE5425CB9D9900DCA01E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0BF549225CF2B6F0073F40A /* Media.xcassets in Resources */,
+				B094AE6E25CBC24B00DCA01E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		889C540E25CABA4700228292 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0B41AA325CAEAD20012A87D /* Home.swift in Sources */,
+				889C543425CABA4700228292 /* CryptoKeyboardApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B094AE5225CB9D9900DCA01E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B094AE6825CBA5D200DCA01E /* KeyboardView.swift in Sources */,
+				B095540125D288820009A404 /* CKModel.swift in Sources */,
+				B0BF548E25CF082B0073F40A /* KeychainWrapper.swift in Sources */,
+				B095540525D289270009A404 /* CKColor.swift in Sources */,
+				B094AE5925CB9D9900DCA01E /* KeyboardViewController.swift in Sources */,
+				B0BF548D25CF082B0073F40A /* KeychainItemAccessibility.swift in Sources */,
+				B0EA6B4F25D31A860090F2A3 /* CKViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B094AE5C25CB9D9900DCA01E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B094AE5525CB9D9900DCA01E /* Crypto Keyboard */;
+			targetProxy = B094AE5B25CB9D9900DCA01E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		889C543A25CABA4700228292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		889C543B25CABA4700228292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		889C543D25CABA4700228292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 6M2QF4T7XG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = so.onekey.one.CryptoKeyboard;
+				PRODUCT_NAME = CryptoKeyboard;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		889C543E25CABA4700228292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 6M2QF4T7XG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = so.onekey.one.CryptoKeyboard;
+				PRODUCT_NAME = CryptoKeyboard;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B094AE5F25CB9D9900DCA01E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 6M2QF4T7XG;
+				INFOPLIST_FILE = "Crypto Keyboard/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "so.onekey.one.CryptoKeyboard.Crypto-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B094AE6025CB9D9900DCA01E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 6M2QF4T7XG;
+				INFOPLIST_FILE = "Crypto Keyboard/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = so.onekey.one.CryptoKeyboard.keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		889C540925CABA4600228292 /* Build configuration list for PBXProject "CryptoKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				889C543A25CABA4700228292 /* Debug */,
+				889C543B25CABA4700228292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		889C543C25CABA4700228292 /* Build configuration list for PBXNativeTarget "CryptoKeyboard (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				889C543D25CABA4700228292 /* Debug */,
+				889C543E25CABA4700228292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B094AE5E25CB9D9900DCA01E /* Build configuration list for PBXNativeTarget "Crypto Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B094AE5F25CB9D9900DCA01E /* Debug */,
+				B094AE6025CB9D9900DCA01E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 889C540625CABA4600228292 /* Project object */;
+}
