@@ -2,7 +2,8 @@
 //  CKDataModel.swift
 //  Crypto Keyboard
 //
-//  Created by liuzhijie on 2021/2/9.
+//  Created by zj on 2021/2/9.
+//  Copyright © 2021 Onekey. All rights reserved.
 //
 
 import Foundation

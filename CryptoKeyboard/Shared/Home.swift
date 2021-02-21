@@ -2,7 +2,8 @@
 //  Home.swift
 //  CryptoKeyboard
 //
-//  Created by liuzhijie on 2021/2/3.
+//  Created by zj on 2021/2/3.
+//  Copyright © 2021 Onekey. All rights reserved.
 //
 
 import SwiftUI
@@ -12,7 +13,7 @@ struct Home: View {
     let onekeyGithubUrl = URL(string: "https://github.com/OneKeyHQ")
     
     init() {
-        UITableView.appearance().backgroundColor = UIColor(Color("bg"))
+        UITableView.appearance().backgroundColor = UIColor(Color("listBG"))
     }
     
     var body: some View {

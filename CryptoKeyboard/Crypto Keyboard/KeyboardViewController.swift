@@ -2,7 +2,8 @@
 //  KeyboardViewController.swift
 //  Crypto Keyboard
 //
-//  Created by liuzhijie on 2021/2/4.
+//  Created by zj on 2021/2/4.
+//  Copyright © 2021 Onekey. All rights reserved.
 //
 
 import UIKit
